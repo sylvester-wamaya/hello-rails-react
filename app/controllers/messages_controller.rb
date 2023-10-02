@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: %i[ show edit update destroy ]
+  before_action :set_message, only: %i[show edit update destroy]
 
   # GET  /messages.json
   def index
@@ -7,4 +7,3 @@ class MessagesController < ApplicationController
     render json: random_greeting
   end
 end
-
