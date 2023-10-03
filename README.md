@@ -85,9 +85,13 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd hello-rails-react
-  
-  bundle install
+cd hello-rails-react
+rails db:drop
+rails db:create
+rails db:migrate
+npm install
+npm run build
+rails s
 ```
 
 ### Run tests
